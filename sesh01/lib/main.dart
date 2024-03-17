@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-            leading: Icon(Icons.menu),
-            title: Text('THIS IS MY FIRST APP',
+            leading: const Icon(Icons.menu),
+            title: const Text('THIS IS MY FIRST APP',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
             backgroundColor: Colors.blueAccent,
             foregroundColor: Colors.white,
@@ -27,7 +27,16 @@ class MyApp extends StatelessWidget {
           body: Center(
               child: Image.asset(
             'assets/cat1.jpg',
-          ))),
+          )
+
+              //////////////////// IMAGE NETWORK ///////////////////
+              // body: Center(
+              // child: Image.Network(
+              // 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+              // height: 300,
+              // ))
+
+              )),
     );
   }
 }
